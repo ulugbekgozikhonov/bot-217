@@ -12,7 +12,7 @@ async def start(message: Message, state: FSMContext):
     user_id = message.from_user.id
     user = select_user(user_id)
     if user:
-        await message.answer("Siz ro'yxatdan o'tgansiz")
+        await message.answer("Siz ro'yxatdan o'tgansiz😁")
     else:
         await state.update_data(user_id=user_id)
         await message.answer("salom ismingizni kiriting")
